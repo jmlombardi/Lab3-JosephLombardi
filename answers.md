@@ -41,9 +41,13 @@
 
 In conclusion to my test results you can clearly see that it takes significantly longer to access elements in a LinkedList vs an ArrayList.  ArrayLists have O(1) for random access because you are accessing an index directly.  On the other hand ArrayLists are very expensive to add or remove because you have to shift all of the elements which is O(n).  This also may include increasing the size of the ArrayList which would create a new array in the background and copy all of the elements to the new list.  If you add an element to the end of an ArrayList that would be O(1) assuming you are not at full capacity.  LinkedLists are much quicker than an ArrayList when adding an element at a specified position and or removing because you are just updating reference pointers.  LinkedLists are O(n) for random access because you always have to start at the head and loop through.
 
-    size(n) 			        10	    100	    1000		10,000		100,000		1,000,000	
-    *********************************************************************************************
-    testArrayListAccess 		11ms	14ms	12ms		18ms		32ms		253ms	
-    testLinkedListAddRemove 	48ms	36ms	38ms		42ms		68ms		344ms
-    testLinkedListAccess 		12ms	33ms	371ms		4s 113ms	43s 931ms	21m 19s 462ms
-    testArraylistAddRemove 		83ms	82ms	192ms		1s 303ms	18s 533ms	6m 10s 115ms
+
+
+
+
+    |                 size(n) | 10s  | 100  | 1,000 | 10,000   | 100,000   | 1,000,000     |
+    |------------------------:|------|------|-------|----------|-----------|---------------|
+    | testArrayListAccess     | 11ms | 14ms | 12ms  | 18ms     | 32ms      | 253ms         |
+    | testLinkedListAddRemove | 48ms | 36ms | 38ms  | 42ms     | 68ms      | 344ms         |
+    | testLinkedListAccess    | 12ms | 33ms | 371ms | 4s 113ms | 43s 931ms | 21m 19s 462ms |
+    | testArraylistAddRemove  | 83ms | 82ms | 192ms | 1s 303ms | 18s 533ms | 6m 10s 115ms  |
