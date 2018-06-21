@@ -1,7 +1,7 @@
-#####Joseph Lombardi
-#####COMP 271: Data Structures
-#####Lab 3
-#####Due 06/20/2018
+    Joseph Lombardi
+    COMP 271: Data Structures
+    Lab 3
+    Due 06/20/2018
 [Click here for My GitHub Lab 3 Repository](https://github.com/jmlombardi/Lab3-JosephLombardi)
 
 #TestList.java Questions
